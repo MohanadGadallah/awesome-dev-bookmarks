@@ -15,3 +15,25 @@ The `pg_trgm` PostgreSQL extension provides functions and operators for determin
 ### 📖 Reference:
 - [PostgreSQL Docs – pg_trgm](https://www.postgresql.org/docs/current/pgtrgm.html)
 
+---
+
+## 📚 Full-Text Search in PostgreSQL
+
+Before diving into the benefits of `pg_trgm`, it's important to note that **PostgreSQL includes a powerful full-text search engine** out of the box. 
+
+For advanced search functionality, consider using:
+- **Text search parsers**
+- **Dictionaries** with support for:
+  - Stemming (e.g., "run" vs "running")
+  - Thesaurus
+  - Synonyms
+
+PostgreSQL's full-text search supports:
+- A dedicated **query language**
+- **Ranking** of search results
+- Rich language processing capabilities
+
+If your use case requires **semantic understanding** or **context-aware search**, full-text search may be a better fit than trigram matching.
+
+### 📖 Reference:
+- [PostgreSQL Docs – Full Text Search](https://www.postgresql.org/docs/current/textsearch.html)
